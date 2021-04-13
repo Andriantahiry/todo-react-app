@@ -1,0 +1,172 @@
+form {
+    border: 1px solid black;
+    height: 40px;
+    display: flex;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+}
+
+form input {
+    height: 100%;
+    width: 300px;
+}
+
+.button {
+    border: none;
+    height: 100%;
+    width: 100px;
+}
+
+.button.over {
+    transform: scale(1.5);
+}
+
+.listes {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+}
+
+.listes p {
+    width: 75%;
+}
+
+.listes button {
+    border: 1px solid rgb(108, 153, 17);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    font-size: 12px;
+    padding: 10px 11px;
+}
+
+.listes button:hover {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.edit {
+    position: absolute;
+    right: 50px;
+    transform: translateY(-50%);
+    top: 32px;
+
+}
+
+.delete {
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    transform: translateY(-50%);
+
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 25px;
+}
+
+.checkbox {
+    position: absolute;
+    right: 100px;
+    transform: translateY(-50%);
+    top: 32px;
+
+}
+
+@media(max-width:1000px) {
+
+    .edit {
+        right: 5px;
+        top: 25px;
+
+    }
+
+    .delete {
+        right: 5px;
+        top: 70px;
+    }
+
+    .checkbox {
+        top: 10px;
+        left: 5px;
+    }
+
+
+    .listes p {
+        padding-bottom: 30px;
+    }
+
+
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: rgba(0, 0, 0, 0.289) !important;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between !important;
+    padding: 0 150px;
+}
+
+.buttons {
+    display: flex;
+    height: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 12px;
+
+}
+
+.buttons button {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+}
+
+.mention {
+    display: flex;
+}
+
+.mention p {
+    font-size: 12px;
+}
+
+.mention p {
+    margin-left: 10px;
+}
+
+footer p {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 12px;
+}
