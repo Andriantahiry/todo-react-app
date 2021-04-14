@@ -118,9 +118,9 @@ export default function App() {
   return (
     <>
 
-      <div className='container title'><h1>TODOS</h1> <span><ListIcon style={{ fontSize: 75 }} /></span></div>
+      <div className='container title'><h1>Bloc-notes</h1> <span><ListIcon style={{ fontSize: 75 }} /></span></div>
       <div className='container d-flex mt-5 justify-content-center'>
-        <div className="container form-container"><form onSubmit={addTodo} className='form' ><input type="text" value={inputText} onChange={getInput} /><button className='button' type='submit'>Ajouter</button>
+        <div className="container form-container"><form onSubmit={addTodo} className='form' ><input placeholder='Ajouter une note' type="text" value={inputText} onChange={getInput} /><button className='button' type='submit'>Ajouter</button>
 
         </form></div>
         {messagError !== '' && <p style={{ marginLeft: '20px', color: 'red', outline: 'none', border: 'none' }}>{messagError}</p>}
