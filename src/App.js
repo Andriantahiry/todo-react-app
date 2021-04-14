@@ -118,9 +118,9 @@ export default function App() {
 
       <div className='container title'><h1>TODOS</h1></div>
       <div className='container d-flex mt-5 justify-content-center'>
-        <form onSubmit={addTodo} className='form' ><input type="text" value={inputText} onChange={getInput} /><button className='button' type='submit'>Ajouter</button>
+        <div className="container form-container"><form onSubmit={addTodo} className='form' ><input type="text" value={inputText} onChange={getInput} /><button className='button' type='submit'>Ajouter</button>
 
-        </form>
+        </form></div>
         {messagError !== '' && <p style={{ marginLeft: '20px', color: 'red', outline: 'none', border: 'none' }}>{messagError}</p>}
       </div>
       <div className="container mt-5">
