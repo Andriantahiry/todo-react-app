@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import './components/app.css'
+import ListIcon from '@material-ui/icons/List';
+
 export default function App() {
   const [data, setData] = useState([])
   const [inputText, setinputText] = useState("")
@@ -116,7 +118,7 @@ export default function App() {
   return (
     <>
 
-      <div className='container title'><h1>TODOS</h1></div>
+      <div className='container title'><h1>TODOS</h1> <span><ListIcon style={{ fontSize: 75 }} /></span></div>
       <div className='container d-flex mt-5 justify-content-center'>
         <div className="container form-container"><form onSubmit={addTodo} className='form' ><input type="text" value={inputText} onChange={getInput} /><button className='button' type='submit'>Ajouter</button>
 

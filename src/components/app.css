@@ -20,6 +20,11 @@ form {
     justify-content: center;
     color: white;
     margin-top: 50px;
+    align-items: center;
+}
+
+.title span {
+    margin-left: 15px;
 }
 
 form input {
