@@ -30,6 +30,8 @@ form {
 form input {
     height: 100%;
     width: 300px;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .button {
